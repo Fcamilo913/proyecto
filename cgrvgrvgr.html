@@ -1,0 +1,21 @@
+<script>
+function descuentocompra() {
+
+let valor_compra = parseFloat(prompt("Ingrese el valor de la compra: "));
+
+let descuento=0;
+
+if (valor_compra >= 10000) {
+    descuento = 0.15;}
+else {
+    descuento = 0;}
+
+
+let descuento_total = (valor_compra * descuento);
+
+
+document.write("El descuento es de: " + descuento_total);
+}
+descuentocompra();
+</script>
+

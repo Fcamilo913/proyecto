@@ -1,0 +1,31 @@
+<script>
+function matriz() {
+    let columnas = parseInt(prompt("Ingrese el número de columnas:"));
+    let filas = parseInt(prompt("Ingrese el número de filas:"));
+
+    // Crear la matriz vacía
+    let matriz = [];
+
+    for (let i = 0; i < filas; i++) {
+        matriz[i] = [];
+        for (let j = 0; j < columnas; j++) {
+            let valor = prompt(`Ingrese el valor para la posición [${i}][${j}]:`);
+            matriz[i][j] = parseFloat(valor); 
+        }
+    }
+
+    document.write("La matriz resultante es:");
+    for (let i = 0; i < filas; i++) {
+        let fila = "";
+        for (let j = 0; j < columnas; j++) {
+            fila = matriz[i][j] + " ";
+        }
+        document.write(fila);
+    }
+}
+
+matriz();
+
+
+
+</script>
